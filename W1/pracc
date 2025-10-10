@@ -1,3 +1,5 @@
+# Color check/questionser
+
 farge = input("Hva er din favoritt farge? ").strip().lower()
 x = ("blå")
 y = {"gul":"banan", "oransje":"appelsin", "grønn":"eple"}
@@ -9,3 +11,34 @@ elif farge in y:
     print(z + " er en god frukt!")
 else:
     print("Fint å vite!")
+
+
+
+
+# Small quiz
+p = [
+    ("2 + 2", 4),
+    ("5 * 4", 20),
+    ("10 / 2", 5),
+]
+
+s = input("Ready for quiz? (y/n) ").strip().lower()
+if s != "y":
+    print("Another time then!")
+else:
+    print("Great!")
+    for q, c in p:
+        r = input(f"What is {q}? ").strip()
+        try:
+            r = float(r.replace(",", "."))
+        except ValueError:
+            print("Unfortunately that is incorrect, better luck next time!")
+            break
+
+        if abs(r - float(c)) < 1e-9:
+            print("Correct!")
+        else:
+            print("Sorry, that is incorrect, better luck next time!")
+            break
+    else:
+        print("Congratulations, you got them all correct!")
