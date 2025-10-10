@@ -1,0 +1,11 @@
+farge = input("Hva er din favoritt farge? ").strip().lower()
+x = ("blå")
+y = {"gul":"banan", "oransje":"appelsin", "grønn":"eple"}
+
+if farge == x:
+    print("Kult, det er også min favoritt farge!")
+elif farge in y:
+    z = y[farge]
+    print(z + " er en god frukt!")
+else:
+    print("Fint å vite!")
