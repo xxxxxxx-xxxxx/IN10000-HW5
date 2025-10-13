@@ -1,0 +1,13 @@
+# 1b - Klassen Filmklubb kunne lest inn filen med filmer i konstruktøren, det vil si ved
+opprettelsen av et nytt Filmklubb-objekt. Ser du noen fordel ved å ikke lese inn filen
+med filmer i konstruktøren? 
+
+# Clean og simpelt, feks __init__ bare lager et tomt objekt defineres.
+# Bedre til å forstå å håndtere eventuelle feil
+# Fleksibelt ved at man kan bruke til det man vil/trenger
+# Kan bruke samme konstruktør eller "instance" flere ganger
+
+# 1c - Parameteren år til konstruktøren i klassen Film er en int (heltall). Hvilken annen type
+ville det vært naturlig å velge, og hvilken forskjell ville det gjort? 
+
+# Kan eventuelt bruke en str for tekst evt si dd.mm.yyyy som man kan endre eller splitte opp litt avhengig.
